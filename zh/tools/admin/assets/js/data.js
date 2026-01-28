@@ -124,24 +124,6 @@ const services = [
           url_external: "https://www.homepageasia.com/zh/usage/",
           url_localhost: "./../../../../homepageasia/zh/usage/"
         }
-      ],
-      "webdesign-by-country": [
-        {
-          url_external: "https://www.homepageasia.com/zh/usage/webdesign-by-country/",
-          url_localhost: "./../../../../homepageasia/zh/usage/webdesign-by-country/"
-        }
-      ],
-      "good-chinese-websites": [
-        {
-          url_external: "https://www.homepageasia.com/zh/usage/good-chinese-websites/",
-          url_localhost: "./../../../../homepageasia/zh/usage/good-chinese-websites/"
-        }
-      ],
-      "why-micro-homepage": [
-        {
-          url_external: "https://www.homepageasia.com/zh/usage/why-micro-homepage/",
-          url_localhost: "./../../../../homepageasia/zh/usage/why-micro-homepage/"
-        }
       ]
     }
   },

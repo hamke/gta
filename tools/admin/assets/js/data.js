@@ -1,6 +1,6 @@
 const services = [
   // -------------------------------------------------------
-  // www.globaltalk.asia/kr/
+  // www.globaltalk.asia/
   // -------------------------------------------------------
   {
     id: "globaltalkasia",
@@ -9,51 +9,51 @@ const services = [
     links: {
       main: [
         {
-          url_external: "https://www.globaltalk.asia/kr/",
-          url_localhost: "./../../../../globaltalkasia/kr/"
+          url_external: "https://www.globaltalk.asia/",
+          url_localhost: "./../../../globaltalkasia/"
         }
       ],
       kakao: [
         {
-          url_external: "https://www.globaltalk.asia/kr/kakao/",
-          url_localhost: "./../../../../globaltalkasia/kr/kakao/"
+          url_external: "https://www.globaltalk.asia/kakao/",
+          url_localhost: "./../../../globaltalkasia/kakao/"
         }
       ],
       marketing: [
         {
-          url_external: "https://www.globaltalk.asia/kr/marketing/",
-          url_localhost: "./../../../../globaltalkasia/kr/marketing/"
+          url_external: "https://www.globaltalk.asia/marketing/",
+          url_localhost: "./../../../globaltalkasia/marketing/"
         }
       ],
       youtube: [
         {
-          url_external: "https://www.globaltalk.asia/kr/yt/",
-          url_localhost: "./../../../../globaltalkasia/kr/yt/"
+          url_external: "https://www.globaltalk.asia/yt/",
+          url_localhost: "./../../../globaltalkasia/yt/"
         }
       ],
       facebook: [
         {
-          url_external: "https://www.globaltalk.asia/kr/fb/",
-          url_localhost: "./../../../../globaltalkasia/kr/fb/"
+          url_external: "https://www.globaltalk.asia/fb/",
+          url_localhost: "./../../../globaltalkasia/fb/"
         }
       ],
       blog: [
         {
-          url_external: "https://www.globaltalk.asia/kr/blog/",
-          url_localhost: "./../../../../globaltalkasia/kr/blog/"
+          url_external: "https://www.globaltalk.asia/blog/",
+          url_localhost: "./../../../globaltalkasia/blog/"
         }
       ],
       usage: [
         {
-          url_external: "https://www.globaltalk.asia/kr/usage/",
-          url_localhost: "./../../../../globaltalkasia/kr/usage/"
+          url_external: "https://www.globaltalk.asia/usage/",
+          url_localhost: "./../../../globaltalkasia/usage/"
         }
       ]
     }
   },
 
   // -------------------------------------------------------
-  // www.globaltalk.asia/kr/service/
+  // www.globaltalk.asia/service/
   // -------------------------------------------------------
   {
     id: "globaltalkasia-service",
@@ -62,20 +62,20 @@ const services = [
     links: {
       main: [
         {
-          url_external: "https://www.globaltalk.asia/kr/service/",
-          url_localhost: "./../../../../globaltalkasia/kr/service/"
+          url_external: "https://www.globaltalk.asia/service/",
+          url_localhost: "./../../../globaltalkasia/service/"
         }
       ],
       usage: [
         {
-          url_external: "https://www.globaltalk.asia/kr/service/usage/",
-          url_localhost: "./../../../../globaltalkasia/kr/service/usage/"
+          url_external: "https://www.globaltalk.asia/service/usage/",
+          url_localhost: "./../../../globaltalkasia/service/usage/"
         }
       ],
       "community-management": [
         {
-          url_external: "https://www.globaltalk.asia/kr/service/community-management/",
-          url_localhost: "./../../../../globaltalkasia/kr/service/community-management/"
+          url_external: "https://www.globaltalk.asia/service/community-management/",
+          url_localhost: "./../../../globaltalkasia/service/community-management/"
         }
       ]
     }
@@ -91,56 +91,32 @@ const services = [
     links: {
       main: [
         {
-          url_external: "https://www.homepageasia.com/kr/",
-          url_localhost: "./../../../../homepageasia/kr/"
+          url_external: "https://www.homepageasia.com/",
+          url_localhost: "./../../../homepageasia/"
         }
       ],
       mobile: [
         {
-          url_external: "https://www.homepageasia.com/kr/mobile/",
-          url_localhost: "./../../../../homepageasia/kr/mobile/"
-        }
-      ],
-      kakao: [
-        {
-          url_external: "https://www.homepageasia.com/kr/kakao/",
-          url_localhost: "./../../../../homepageasia/kr/kakao/"
+          url_external: "https://www.homepageasia.com/mobile/",
+          url_localhost: "./../../../homepageasia/mobile/"
         }
       ],
       facebook: [
         {
-          url_external: "https://www.homepageasia.com/kr/fb/",
-          url_localhost: "./../../../../homepageasia/kr/fb/"
+          url_external: "https://www.homepageasia.com/fb/",
+          url_localhost: "./../../../homepageasia/fb/"
         }
       ],
       demo: [
         {
-          url_external: "https://www.homepageasia.com/kr/demo/",
-          url_localhost: "./../../../../homepageasia/kr/demo/"
+          url_external: "https://www.homepageasia.com/demo/",
+          url_localhost: "./../../../homepageasia/demo/"
         }
       ],
       usage: [
         {
-          url_external: "https://www.homepageasia.com/kr/usage/",
-          url_localhost: "./../../../../homepageasia/kr/usage/"
-        }
-      ],
-      "webdesign-by-country": [
-        {
-          url_external: "https://www.homepageasia.com/kr/usage/webdesign-by-country/",
-          url_localhost: "./../../../../homepageasia/kr/usage/webdesign-by-country/"
-        }
-      ],
-      "good-chinese-websites": [
-        {
-          url_external: "https://www.homepageasia.com/kr/usage/good-chinese-websites/",
-          url_localhost: "./../../../../homepageasia/kr/usage/good-chinese-websites/"
-        }
-      ],
-      "why-micro-homepage": [
-        {
-          url_external: "https://www.homepageasia.com/kr/usage/why-micro-homepage/",
-          url_localhost: "./../../../../homepageasia/kr/usage/why-micro-homepage/"
+          url_external: "https://www.homepageasia.com/usage/",
+          url_localhost: "./../../../homepageasia/usage/"
         }
       ]
     }
@@ -156,38 +132,38 @@ const services = [
     links: {
       main: [
         {
-          url_external: "https://www.homepageasia.com/kr/viewer/",
-          url_localhost: "./../../../../homepageasia/kr/viewer/"
+          url_external: "https://www.homepageasia.com/viewer/",
+          url_localhost: "./../../../homepageasia/viewer/"
         }
       ],
       mobile: [
         {
-          url_external: "https://www.homepageasia.com/kr/mobile/viewer/",
-          url_localhost: "./../../../../homepageasia/kr/mobile/viewer/"
+          url_external: "https://www.homepageasia.com/mobile/viewer/",
+          url_localhost: "./../../../homepageasia/mobile/viewer/"
         }
       ],
       usage: [
         {
-          url_external: "https://www.homepageasia.com/kr/viewer/usage/",
-          url_localhost: "./../../../../homepageasia/kr/viewer/usage/"
+          url_external: "https://www.homepageasia.com/viewer/usage/",
+          url_localhost: "./../../../homepageasia/viewer/usage/"
         }
       ],
       blocked: [
         {
-          url_external: "https://www.homepageasia.com/kr/viewer/blocked/",
-          url_localhost: "./../../../../homepageasia/kr/viewer/blocked/"
+          url_external: "https://www.homepageasia.com/viewer/blocked/",
+          url_localhost: "./../../../homepageasia/viewer/blocked/"
         }
       ],
       reported: [
         {
-          url_external: "https://www.homepageasia.com/kr/viewer/reported/",
-          url_localhost: "./../../../../homepageasia/kr/viewer/reported/"
+          url_external: "https://www.homepageasia.com/viewer/reported/",
+          url_localhost: "./../../../homepageasia/viewer/reported/"
         }
       ],
       stats: [
         {
-          url_external: "https://www.homepageasia.com/kr/viewer/stats/",
-          url_localhost: "./../../../../homepageasia/kr/viewer/stats/"
+          url_external: "https://www.homepageasia.com/viewer/stats/",
+          url_localhost: "./../../../homepageasia/viewer/stats/"
         }
       ]
     }
