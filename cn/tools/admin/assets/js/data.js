@@ -13,28 +13,10 @@ const services = [
           url_localhost: "./../../../../globaltalkasia/cn/"
         }
       ],
-      kakao: [
-        {
-          url_external: "https://www.globaltalk.asia/cn/kakao/",
-          url_localhost: "./../../../../globaltalkasia/cn/kakao/"
-        }
-      ],
       marketing: [
         {
           url_external: "https://www.globaltalk.asia/cn/marketing/",
           url_localhost: "./../../../../globaltalkasia/cn/marketing/"
-        }
-      ],
-      youtube: [
-        {
-          url_external: "https://www.globaltalk.asia/cn/yt/",
-          url_localhost: "./../../../../globaltalkasia/cn/yt/"
-        }
-      ],
-      facebook: [
-        {
-          url_external: "https://www.globaltalk.asia/cn/fb/",
-          url_localhost: "./../../../../globaltalkasia/cn/fb/"
         }
       ],
       blog: [
@@ -99,18 +81,6 @@ const services = [
         {
           url_external: "https://www.homepageasia.com/cn/mobile/",
           url_localhost: "./../../../../homepageasia/cn/mobile/"
-        }
-      ],
-      kakao: [
-        {
-          url_external: "https://www.homepageasia.com/cn/kakao/",
-          url_localhost: "./../../../../homepageasia/cn/kakao/"
-        }
-      ],
-      facebook: [
-        {
-          url_external: "https://www.homepageasia.com/cn/fb/",
-          url_localhost: "./../../../../homepageasia/cn/fb/"
         }
       ],
       demo: [
