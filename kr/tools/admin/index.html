@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>AutoMoney AI Services</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./../../../assets/img/favicon.ico"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* :root {
+            --color-background: #0a0a0c;
+            --color-background-light: #19191a;
+            --color-background-dark: #000;
+            --color-primary: #8b5cf6;
+            --color-primary-dark: #7645e3;
+            --color-border: #19191a;
+            --color-text-h1: #fff;
+            --color-text-h2: #f3f3f3;
+            --color-text-h3: #ecedee;
+            --color-text-content: #a1a1aa;
+            --color-text-other: #d2d2d2;
+            --color-muted: #7c7c7c;
+        } */
+
+        .search-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 640px;
+        }
+
+        #searchButton {
+            white-space: nowrap;
+        }
+
+        #clearBtn {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            color: #999;
+            display: none;
+            user-select: none;
+        }
+
+        #clearBtn:hover {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <div id="loginPage" class="bg-gray-50 flex items-center justify-center min-h-screen px-4 text-center">
+        <div class="bg-white rounded-lg shadow-md p-8 max-w-md w-full">
+            <div class="text-center">
+                <a href="./" class="inline-block mb-6">
+                    <img src="https://hellotblog.wordpress.com/wp-content/uploads/2025/07/automoneytalk-logo-design-img-round-01-80x80-1.png"
+                        alt="logo" width="72" height="72" class="mx-auto" />
+                </a>
+            </div>
+
+            <h1 class="text-2xl font-bold mb-6 text-center">AutoMoney AI Admin</h1>
+
+            <form id="loginForm" class="space-y-4" onsubmit="return false;">
+                <input type="text" id="username" placeholder="Username" required autofocus
+                    class="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" />
+                <input type="password" id="password" placeholder="Password" required
+                    class="appearance-none rounded-md relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" />
+                <div class="flex items-center text-gray-700 text-sm select-none">
+                    <input type="checkbox" id="rememberMe" class="form-checkbox text-indigo-600 mr-2" />
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <button type="submit"
+                    class="w-full bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 rounded-md transition focus:outline-none focus:ring-2 focus:ring-gray-800">
+                    Sign in
+                </button>
+            </form>
+
+            <p id="loginError" class="mt-4 text-red-600 text-sm hidden"></p>
+
+            <p class="mt-8 text-gray-500 text-sm text-center">&copy; AutoMoney AI</p>
+        </div>
+    </div>
+
+    <div id="dashboardPage" class="hidden px-4 py-4">
+
+        <h1 class="text-xl lg:text-2xl text-center font-bold mb-4">
+            <a href="https://www.automoneyai.com/kr/tools/admin/" target="_blank">
+                <img src="https://hellotblog.wordpress.com/wp-content/uploads/2025/07/automoneytalk-logo-design-img-round-01-80x80-1.png" class="title inline-block mr-1" style="width:22px; margin-bottom:3px;">
+            </a> <a href="./">AutoMoney AI Services</a>
+            </a>
+        </h1>
+
+        <div class="flex justify-center mb-6">
+            <div class="search-wrapper w-full">
+                <input type="text" id="searchInput" placeholder="Input a keyword ..."
+                    class="border rounded p-2 w-full pr-8 focus:outline-none" />
+                <span id="clearBtn" title="Clear search">X</span>
+            </div>
+            <button id="searchButton"
+                class="ml-2 bg-gray-800 text-white text-sm lg:text-lg px-4 rounded hover:bg-gray-700">
+                검색
+            </button>
+        </div>
+
+        <button id="menuButton" class="fixed top-4 left-4 z-50 px-2 py-1 focus:outline-none" aria-label="Toggle menu">
+
+            <svg id="menuIcon" class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+
+            <svg id="closeIcon" class="w-5 h-5 text-gray-700 hidden" fill="none" stroke="currentColor" stroke-width="2"
+                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+        </button>
+
+        <div id="offCanvasMenu"
+            class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-40"
+            aria-hidden="true">
+            <div class="pb-5 mb-5 flex justify-between items-center" style="padding-bottom:2.5rem;">
+            </div>
+            <nav class="px-3 py-5 text-center">
+                <ul class="space-y-4 text-gray-700">
+                    <li>
+                        <a href="./" class="hover:text-gray-800">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./../../kakao/" target="_blank" class="hover:text-gray-800">
+                            Kakao
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="event.preventDefault();" id="logoutBtn" class="hover:text-gray-800">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+                <!-- <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Welcome, <span id="userDisplay"></span></h2>
+            <button id="logoutBtn"
+                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">Logout</button>
+        </div> -->
+
+        <div id="overlay"
+            class="fixed inset-0 bg-black bg-opacity-30 opacity-0 pointer-events-none transition-opacity duration-300 z-30">
+        </div>
+
+        <div id="languageSelector" class="fixed top-4 right-4 z-50">
+            <button id="langBtn" class="px-2 py-1 flex items-center space-x-1 focus:outline-none" aria-haspopup="true"
+                aria-expanded="false" title="Select Language">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 010 20" />
+                </svg>
+                <!-- <span id="selectedLang" class="text-sm font-semibold select-none">KO</span> -->
+                <!-- <svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg> -->
+            </button>
+            <ul id="langMenu"
+                class="hidden absolute right-0 py-2 mt-1 w-32 bg-white border border-gray-300 rounded shadow-md">
+                <li><a href="./../../../tools/admin/"><button class="w-full text-left px-3 py-1 hover:bg-gray-100" data-lang="EN">English</button></a></li>
+                <li><a href="./"><button class="w-full text-left px-3 py-1 hover:bg-gray-100" data-lang="KO">한국어</button></a></li>
+                <li><a href="./../../../cn/tools/admin/"><button class="w-full text-left px-3 py-1 hover:bg-gray-100" data-lang="ZH-CN">中文(简体)</button></a></li>
+                <li><a href="./../../../zh/tools/admin/"><button class="w-full text-left px-3 py-1 hover:bg-gray-100" data-lang="ZH-TW">中文(繁體)</button></a></li>
+                <li><a href="./../../../jp/tools/admin/"><button class="w-full text-left px-3 py-1 hover:bg-gray-100" data-lang="JA">日本語</button></a></li>
+                <li><a href="./../../../vn/tools/admin/"><button class="w-full text-left px-3 py-1 hover:bg-gray-100" data-lang="VI">Tiếng Việt</button></a></li>
+            </ul>
+        </div>
+
+        <div id="dashboard"></div>
+
+        <button id="scrollTopBtn"
+            class="fixed bottom-16 right-6 p-2 rounded-full bg-gray-800 text-white shadow-lg hover:bg-gray-700 focus:outline-none z-50"
+            title="Scroll Up" aria-label="Scroll to top">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M12 19V6m0 0l-7 7m7-7l7 7" />
+            </svg>
+        </button>
+
+        <button id="scrollBottomBtn"
+            class="fixed bottom-6 right-6 p-2 rounded-full bg-gray-800 text-white shadow-lg hover:bg-gray-700 focus:outline-none z-50"
+            title="Scroll Down" aria-label="Scroll to bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M12 5v13m0 0l-7-7m7 7l7-7"></path>
+            </svg>
+        </button>
+
+        <!-- <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Welcome, <span id="userDisplay"></span></h2>
+            <button id="logoutBtn"
+                class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">Logout</button>
+        </div> -->
+
+        <div id="dashboard"></div>
+    </div>
+
+    <footer class="bg-gray-200 text-dark text-center py-4 mt-10">
+        <p class="text-sm">&copy; <span class="post-year"></span> AutoMoneyLab. All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/js/data.js"></script>
+
+    <script src="./../../../assets/js/date.js"></script>
+
+    <script>
+        const users = {
+            'x': 'x'
+        };
+
+        const loginPage = document.getElementById('loginPage');
+        const dashboardPage = document.getElementById('dashboardPage');
+        const loginForm = document.getElementById('loginForm');
+        const loginError = document.getElementById('loginError');
+        // const userDisplay = document.getElementById('userDisplay');
+        const logoutBtn = document.getElementById('logoutBtn');
+
+        function showDashboard(username) {
+            loginPage.classList.add('hidden');
+            dashboardPage.classList.remove('hidden');
+            // userDisplay.textContent = username;
+            renderDashboard();
+        }
+
+        function showLogin() {
+            loginPage.classList.remove('hidden');
+            dashboardPage.classList.add('hidden');
+            loginError.classList.add('hidden');
+            loginForm.reset();
+            document.getElementById('username').focus();
+        }
+
+        function renderDashboard(filterText = "") {
+            const dashboard = document.getElementById('dashboard');
+            dashboard.innerHTML = "";
+
+            const lowerFilter = filterText.toLowerCase();
+
+            const filteredServices = filterText
+                ? services.filter(s => {
+                    const inName = s.name.toLowerCase().includes(lowerFilter);
+                    const inLinkKeys = Object.keys(s.links).some(linkKey =>
+                        linkKey.toLowerCase().includes(lowerFilter)
+                    );
+                    return inName || inLinkKeys;
+                })
+                : services;
+
+            const categories = [...new Set(filteredServices.map(s => s.category))];
+
+            categories.forEach(category => {
+                const section = document.createElement("section");
+                section.className = "mb-12";
+
+                const title = document.createElement("h2");
+                title.className = "text-xl font-semibold mb-4";
+                title.textContent = category;
+
+                const grid = document.createElement("div");
+                grid.className = "grid grid-cols-1 md:grid-cols-4 gap-3";
+
+                filteredServices
+                    .filter(s => s.category === category)
+                    .forEach(service => {
+                        const card = document.createElement("div");
+                        card.className = "border p-4 rounded shadow hover:shadow-lg bg-white";
+
+                        const h3 = document.createElement("h3");
+                        h3.className = "text-lg font-bold mb-2";
+                        h3.textContent = service.name;
+
+                        card.appendChild(h3);
+
+                        if (service.links.main) {
+                            service.links.main.forEach(link => {
+                                const mainDiv = document.createElement("div");
+                                mainDiv.className = "main-link mb-2";
+
+                                const a = document.createElement("a");
+                                a.href = link[domainType];
+                                a.textContent = service.id;
+                                a.className = "text-blue-600 hover:underline text-sm inline-block";
+                                a.target = "_blank";
+
+                                mainDiv.appendChild(a);
+                                card.appendChild(mainDiv);
+                            });
+                        }
+
+                        const otherLinksDiv = document.createElement("div");
+                        otherLinksDiv.className = "text-sm mt-1";
+
+                        const otherLinkEntries = Object.entries(service.links).filter(([key]) => key !== "main");
+
+                        const otherLinks = [];
+                        otherLinkEntries.forEach(([linkType, links]) => {
+                            links.forEach(link => {
+                                otherLinks.push({
+                                    text: linkType,
+                                    href: link[domainType],
+                                });
+                            });
+                        });
+
+                        otherLinks.forEach((linkObj, idx) => {
+                            const a = document.createElement("a");
+                            a.href = linkObj.href;
+                            a.textContent = linkObj.text;
+                            a.className = "text-blue-600 hover:underline";
+                            a.target = "_blank";
+                            otherLinksDiv.appendChild(a);
+
+                            if (idx < otherLinks.length - 1) {
+                                otherLinksDiv.appendChild(document.createTextNode(" / "));
+                            }
+                        });
+
+                        if (otherLinks.length > 0) {
+                            card.appendChild(otherLinksDiv);
+                        }
+
+                        grid.appendChild(card);
+                    });
+
+                section.appendChild(title);
+                section.appendChild(grid);
+                dashboard.appendChild(section);
+            });
+        }
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+
+            loginError.classList.add('hidden');
+            if (!username || !password) {
+                loginError.textContent = 'Please enter username and password.';
+                loginError.classList.remove('hidden');
+                return;
+            }
+
+            if (users[username] && users[username] === password) {
+                sessionStorage.setItem('username', username);
+                showDashboard(username);
+            } else {
+                loginError.textContent = 'Incorrect username or password.';
+                loginError.classList.remove('hidden');
+            }
+        });
+
+        logoutBtn.addEventListener('click', () => {
+            sessionStorage.removeItem('username');
+            showLogin();
+        });
+
+        window.addEventListener('load', () => {
+            const username = sessionStorage.getItem('username');
+            if (username) {
+                showDashboard(username);
+            } else {
+                showLogin();
+            }
+        });
+
+    </script>
+
+    <script>
+        const domainType = location.hostname === "localhost" ? "url_localhost" : "url_external";
+        const dashboard = document.getElementById("dashboard");
+        const searchInput = document.getElementById("searchInput");
+        const searchButton = document.getElementById("searchButton");
+        const clearBtn = document.getElementById("clearBtn");
+
+        function renderDashboard(filterText = "") {
+            dashboard.innerHTML = "";
+
+            const lowerFilter = filterText.toLowerCase();
+
+            const filteredServices = filterText
+                ? services.filter(s => {
+                    const inName = s.name.toLowerCase().includes(lowerFilter);
+                    const inLinkKeys = Object.keys(s.links).some(linkKey =>
+                        linkKey.toLowerCase().includes(lowerFilter)
+                    );
+
+                    return inName || inLinkKeys;
+                })
+                : services;
+
+            const categories = [...new Set(filteredServices.map(s => s.category))];
+
+            categories.forEach(category => {
+                const section = document.createElement("section");
+                section.className = "mb-12";
+
+                const title = document.createElement("h2");
+                title.className = "text-xl text-gray-400 font-semibold px-4 mb-4";
+                title.textContent = category;
+
+                const grid = document.createElement("div");
+                grid.className = "grid grid-cols-1 md:grid-cols-4 gap-3";
+
+                filteredServices
+                    .filter(s => s.category === category)
+                    .forEach(service => {
+                        const card = document.createElement("div");
+                        card.className = "border p-4 rounded shadow hover:shadow-lg bg-white";
+
+                        const h3 = document.createElement("h3");
+                        h3.className = "text-lg font-bold mb-2";
+                        h3.textContent = service.name;
+
+                        card.appendChild(h3);
+
+                        if (service.links.main) {
+                            service.links.main.forEach(link => {
+                                const mainDiv = document.createElement("div");
+                                mainDiv.className = "main-link mb-2";
+
+                                const a = document.createElement("a");
+                                a.href = link[domainType];
+                                a.textContent = service.id;
+                                a.className = "text-gray-600 hover:underline text-sm inline-block";
+                                a.target = "_blank";
+
+                                mainDiv.appendChild(a);
+                                card.appendChild(mainDiv);
+                            });
+                        }
+
+                        const otherLinksDiv = document.createElement("div");
+                        otherLinksDiv.className = "text-sm mt-1";
+
+                        const otherLinkEntries = Object.entries(service.links).filter(([key]) => key !== "main");
+
+                        const otherLinks = [];
+                        otherLinkEntries.forEach(([linkType, links]) => {
+                            links.forEach(link => {
+                                otherLinks.push({
+                                    text: linkType,
+                                    href: link[domainType],
+                                });
+                            });
+                        });
+
+                        otherLinks.forEach((linkObj, idx) => {
+                            const a = document.createElement("a");
+                            a.href = linkObj.href;
+                            a.textContent = linkObj.text;
+                            a.className = "text-gray-600 hover:underline";
+                            a.target = "_blank";
+                            otherLinksDiv.appendChild(a);
+
+                            if (idx < otherLinks.length - 1) {
+                                otherLinksDiv.appendChild(document.createTextNode(" / "));
+                            }
+                        });
+
+                        if (otherLinks.length > 0) {
+                            card.appendChild(otherLinksDiv);
+                        }
+
+                        grid.appendChild(card);
+                    });
+
+                section.appendChild(title);
+                section.appendChild(grid);
+                dashboard.appendChild(section);
+            });
+        }
+
+        function toggleClearBtn() {
+            clearBtn.style.display = searchInput.value.trim() ? "block" : "none";
+        }
+
+        searchInput.addEventListener("input", () => {
+            toggleClearBtn();
+            renderDashboard(searchInput.value);
+        });
+
+        searchButton.addEventListener("click", () => {
+            renderDashboard(searchInput.value);
+            toggleClearBtn();
+        });
+
+        searchInput.addEventListener("keypress", e => {
+            if (e.key === "Enter") {
+                renderDashboard(searchInput.value);
+                toggleClearBtn();
+            }
+        });
+
+        clearBtn.addEventListener("click", () => {
+            searchInput.value = "";
+            toggleClearBtn();
+            renderDashboard();
+            searchInput.focus();
+        });
+
+        toggleClearBtn();
+        renderDashboard();
+    </script>
+
+    <script>
+        const menuButton = document.getElementById("menuButton");
+        const menuIcon = document.getElementById("menuIcon");
+        const closeIcon = document.getElementById("closeIcon");
+        const offCanvasMenu = document.getElementById("offCanvasMenu");
+        const overlay = document.getElementById("overlay");
+
+        function openMenu() {
+            offCanvasMenu.classList.remove("-translate-x-full");
+            offCanvasMenu.setAttribute("aria-hidden", "false");
+            overlay.classList.remove("opacity-0", "pointer-events-none");
+            menuIcon.classList.add("hidden");
+            closeIcon.classList.remove("hidden");
+        }
+
+        function closeMenu() {
+            offCanvasMenu.classList.add("-translate-x-full");
+            offCanvasMenu.setAttribute("aria-hidden", "true");
+            overlay.classList.add("opacity-0", "pointer-events-none");
+            menuIcon.classList.remove("hidden");
+            closeIcon.classList.add("hidden");
+        }
+
+        menuButton.addEventListener("click", () => {
+            const isOpen = !offCanvasMenu.classList.contains("-translate-x-full");
+            if (isOpen) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        overlay.addEventListener("click", closeMenu);
+    </script>
+
+    <script>
+        const langBtn = document.getElementById("langBtn");
+        const langMenu = document.getElementById("langMenu");
+        const selectedLang = document.getElementById("selectedLang");
+
+        langBtn.addEventListener("click", () => {
+            const isHidden = langMenu.classList.contains("hidden");
+            if (isHidden) {
+                langMenu.classList.remove("hidden");
+                langBtn.setAttribute("aria-expanded", "true");
+            } else {
+                langMenu.classList.add("hidden");
+                langBtn.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        langMenu.querySelectorAll("button").forEach(btn => {
+            btn.addEventListener("click", () => {
+                const langCode = btn.getAttribute("data-lang");
+                selectedLang.textContent = langCode;
+                langMenu.classList.add("hidden");
+                langBtn.setAttribute("aria-expanded", "false");
+
+                console.log("Selected language:", langCode);
+            });
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
+                langMenu.classList.add("hidden");
+                langBtn.setAttribute("aria-expanded", "false");
+            }
+        });
+    </script>
+
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        const scrollBottomBtn = document.getElementById('scrollBottomBtn');
+
+        window.addEventListener('scroll', () => {
+
+            const nearTop = window.scrollY <= 100;
+            const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 100;
+
+            if (window.scrollY > 100) {
+                scrollTopBtn.classList.remove('hidden');
+            } else {
+                scrollTopBtn.classList.add('hidden');
+            }
+
+            if (nearBottom) {
+                scrollBottomBtn.classList.add('hidden');
+            } else {
+                scrollBottomBtn.classList.remove('hidden');
+            }
+        });
+
+        scrollTopBtn.classList.add('hidden');
+        scrollBottomBtn.classList.add('hidden');
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        scrollBottomBtn.addEventListener('click', () => {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "/" && !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) {
+                e.preventDefault();
+                searchInput.focus();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
