@@ -13,12 +13,6 @@ const services = [
           url_localhost: "./../../../../globaltalkasia/jp/"
         }
       ],
-      kakao: [
-        {
-          url_external: "https://www.globaltalk.asia/jp/kakao/",
-          url_localhost: "./../../../../globaltalkasia/jp/kakao/"
-        }
-      ],
       marketing: [
         {
           url_external: "https://www.globaltalk.asia/jp/marketing/",
@@ -99,12 +93,6 @@ const services = [
         {
           url_external: "https://www.homepageasia.com/jp/mobile/",
           url_localhost: "./../../../../homepageasia/jp/mobile/"
-        }
-      ],
-      kakao: [
-        {
-          url_external: "https://www.homepageasia.com/jp/kakao/",
-          url_localhost: "./../../../../homepageasia/jp/kakao/"
         }
       ],
       facebook: [
@@ -228,12 +216,6 @@ const services = [
         {
           url_external: "https://www.koreatalk.jp/payinfo/",
           url_localhost: "./../../../../koreatalk-jp/payinfo/"
-        }
-      ],
-      kakao: [
-        {
-          url_external: "https://www.koreatalk.jp/kakao/",
-          url_localhost: "./../../../../koreatalk-jp/kakao/"
         }
       ],
       instagram: [

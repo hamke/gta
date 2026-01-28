@@ -13,12 +13,6 @@ const services = [
           url_localhost: "./../../../../globaltalkasia/vn/"
         }
       ],
-      kakao: [
-        {
-          url_external: "https://www.globaltalk.asia/vn/kakao/",
-          url_localhost: "./../../../../globaltalkasia/vn/kakao/"
-        }
-      ],
       marketing: [
         {
           url_external: "https://www.globaltalk.asia/vn/marketing/",
@@ -99,12 +93,6 @@ const services = [
         {
           url_external: "https://www.homepageasia.com/vn/mobile/",
           url_localhost: "./../../../../homepageasia/vn/mobile/"
-        }
-      ],
-      kakao: [
-        {
-          url_external: "https://www.homepageasia.com/vn/kakao/",
-          url_localhost: "./../../../../homepageasia/vn/kakao/"
         }
       ],
       facebook: [

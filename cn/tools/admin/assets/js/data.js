@@ -223,43 +223,7 @@ const services = [
           url_external: "https://www.asiatalk.cn/payinfo/",
           url_localhost: "./../../../../asiatalk-cn/payinfo/"
         }
-      ],
-      kakao: [
-        {
-          url_external: "https://www.asiatalk.cn/kakao/",
-          url_localhost: "./../../../../asiatalk-cn/kakao/"
-        }
-      ],
-      youtube: [
-        {
-          url_external: "https://www.asiatalk.cn/yt/",
-          url_localhost: "./../../../../asiatalk-cn/yt/"
-        }
-      ],
-      instagram: [
-        {
-          url_external: "https://www.asiatalk.cn/ig/",
-          url_localhost: "./../../../../asiatalk-cn/ig/"
-        }
-      ],
-      facebook: [
-        {
-          url_external: "https://www.asiatalk.cn/fb.kr/",
-          url_localhost: "./../../../../asiatalk-cn/fb.kr/"
-        }
-      ],
-      threads: [
-        {
-          url_external: "https://www.asiatalk.cn/threads/",
-          url_localhost: "./../../../../asiatalk-cn/threads/"
-        }
-      ],
-      "naver-blog": [
-        {
-          url_external: "https://www.asiatalk.cn/naver-blog/",
-          url_localhost: "./../../../../asiatalk-cn/naver-blog/"
-        }
-      ],
+      ]
     }
   }
 ];
