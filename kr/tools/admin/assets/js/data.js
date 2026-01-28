@@ -87,7 +87,7 @@ const services = [
   {
     id: "homepageasia",
     name: "홈페이지아시아(HomePageAsia)",
-    category: "GlobalTalkAsia",
+    category: "HomePageAsia",
     links: {
       main: [
         {
@@ -152,7 +152,7 @@ const services = [
   {
     id: "homepageasia-viewer",
     name: "홈페이지아시아(HomePageAsia/Viewer)",
-    category: "GlobalTalkAsia",
+    category: "HomePageAsia",
     links: {
       main: [
         {
