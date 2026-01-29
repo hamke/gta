@@ -96,8 +96,8 @@ const services = [
       ],
       "usage-kr": [
         {
-          url_external: "https://www.koreatalk.jp/usage/jp/",
-          url_localhost: "./../../../../koreatalk-jp/usage/jp/"
+          url_external: "https://www.koreatalk.jp/usage/kr/",
+          url_localhost: "./../../../../koreatalk-jp/usage/kr/"
         }
       ],
       store: [
