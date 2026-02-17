@@ -668,6 +668,88 @@ const services = [
     }
   },
   // -------------------------------------------------------
+  // www.canadatalk.net
+  // -------------------------------------------------------
+  {
+    id: "canadatalk-net",
+    name: "캐나다톡 (CanadaTalk)",
+    category: "CanadaTalk",
+    links: {
+      main: [
+        {
+          url_external: "https://www.canadatalk.net/",
+          url_localhost: "./../../../../canadatalk/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.canadatalk.net/usage/",
+          url_localhost: "./../../../../canadatalk/usage/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.canadatalk.net/store/",
+          url_localhost: "./../../../../canadatalk/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.canadatalk.net/marketing/",
+          url_localhost: "./../../../../canadatalk/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.canadatalk.net/school/",
+          url_localhost: "./../../../../canadatalk/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.canadatalk.net/data/a/",
+          url_localhost: "./../../../../canadatalk/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.canadatalk.net/payinfo/",
+          url_localhost: "./../../../../canadatalk/payinfo/"
+        }
+      ],
+      kakao: [
+        {
+          url_external: "https://www.canadatalk.net/kakao/",
+          url_localhost: "./../../../../canadatalk/kakao/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.canadatalk.net/ig/",
+          url_localhost: "./../../../../canadatalk/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.canadatalk.net/fb.kr/",
+          url_localhost: "./../../../../canadatalk/fb.kr/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.canadatalk.net/threads/",
+          url_localhost: "./../../../../canadatalk/threads/"
+        }
+      ],
+      "naver-blog": [
+        {
+          url_external: "https://www.canadatalk.net/naver-blog/",
+          url_localhost: "./../../../../canadatalk/naver-blog/"
+        }
+      ],
+    }
+  },
+  // -------------------------------------------------------
   // www.malaysiatalk.net
   // -------------------------------------------------------
   {
