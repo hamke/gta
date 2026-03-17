@@ -147,6 +147,12 @@ const services = [
           url_external: "https://www.koreatalk.jp/threads/",
           url_localhost: "./../../../../koreatalk-jp/threads/"
         }
+      ],
+      ameblo: [
+        {
+          url_external: "https://www.koreatalk.jp/ameblo/",
+          url_localhost: "./../../../../koreatalk-jp/ameblo/"
+        }
       ]
     }
   }
