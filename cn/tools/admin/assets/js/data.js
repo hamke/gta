@@ -119,8 +119,8 @@ const services = [
   // www.koreatalk.cn
   // -------------------------------------------------------
   {
-    id: "koreatalk-net",
-    name: "KoreaTalk",
+    id: "koreatalk-cn",
+    name: "韩国谈 (KoreaTalk)",
     category: "KoreaTalk",
     links: {
       main: [
