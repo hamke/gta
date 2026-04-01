@@ -79,6 +79,89 @@ const services = [
         }
       ]
     }
+  },
+
+  // -------------------------------------------------------
+  // www.koreatalk.net
+  // -------------------------------------------------------
+  {
+    id: "koreatalk-net",
+    name: "KoreaTalk",
+    category: "KoreaTalk",
+    links: {
+      main: [
+        {
+          url_external: "https://www.koreatalk.net/",
+          url_localhost: "./../../../koreatalk-en/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.koreatalk.net/usage/",
+          url_localhost: "./../../../koreatalk-en/usage/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.koreatalk.net/store/",
+          url_localhost: "./../../../koreatalk-en/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.koreatalk.net/marketing/",
+          url_localhost: "./../../../koreatalk-en/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.koreatalk.net/school/",
+          url_localhost: "./../../../koreatalk-en/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.koreatalk.net/data/a/",
+          url_localhost: "./../../../koreatalk-en/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.koreatalk.net/payinfo/",
+          url_localhost: "./../../../koreatalk-en/payinfo/"
+        }
+      ],
+      kakao: [
+        {
+          url_external: "https://www.koreatalk.net/kakao/",
+          url_localhost: "./../../../koreatalk-en/kakao/"
+        }
+      ],
+      youtube: [
+        {
+          url_external: "https://www.koreatalk.net/yt/",
+          url_localhost: "./../../../koreatalk-en/yt/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.koreatalk.net/ig/",
+          url_localhost: "./../../../koreatalk-en/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.koreatalk.net/fb.kr/",
+          url_localhost: "./../../../koreatalk-en/fb.kr/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.koreatalk.net/threads/",
+          url_localhost: "./../../../koreatalk-en/threads/"
+        }
+      ]
+    }
   }
 ];
 

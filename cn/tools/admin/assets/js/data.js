@@ -113,6 +113,89 @@ const services = [
         }
       ]
     }
+  },
+
+  // -------------------------------------------------------
+  // www.koreatalk.cn
+  // -------------------------------------------------------
+  {
+    id: "koreatalk-net",
+    name: "KoreaTalk",
+    category: "KoreaTalk",
+    links: {
+      main: [
+        {
+          url_external: "https://www.koreatalk.cn/",
+          url_localhost: "./../../../../koreatalk-cn/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.koreatalk.cn/usage/",
+          url_localhost: "./../../../../koreatalk-cn/usage/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.koreatalk.cn/store/",
+          url_localhost: "./../../../../koreatalk-cn/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.koreatalk.cn/marketing/",
+          url_localhost: "./../../../../koreatalk-cn/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.koreatalk.cn/school/",
+          url_localhost: "./../../../../koreatalk-cn/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.koreatalk.cn/data/a/",
+          url_localhost: "./../../../../koreatalk-cn/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.koreatalk.cn/payinfo/",
+          url_localhost: "./../../../../koreatalk-cn/payinfo/"
+        }
+      ],
+      kakao: [
+        {
+          url_external: "https://www.koreatalk.cn/kakao/",
+          url_localhost: "./../../../../koreatalk-cn/kakao/"
+        }
+      ],
+      youtube: [
+        {
+          url_external: "https://www.koreatalk.cn/yt/",
+          url_localhost: "./../../../../koreatalk-cn/yt/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.koreatalk.cn/ig/",
+          url_localhost: "./../../../../koreatalk-cn/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.koreatalk.cn/fb.kr/",
+          url_localhost: "./../../../../koreatalk-cn/fb.kr/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.koreatalk.cn/threads/",
+          url_localhost: "./../../../../koreatalk-cn/threads/"
+        }
+      ]
+    }
   }
 ];
 

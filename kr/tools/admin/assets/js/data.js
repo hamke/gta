@@ -82,89 +82,89 @@ const services = [
   },
   
   // -------------------------------------------------------
-  // www.koreatalk.net
+  // www.koreatalk.me
   // -------------------------------------------------------
   {
-    id: "koreatalk-net",
+    id: "koreatalk-me",
     name: "코리아톡 (KoreaTalk)",
     category: "KoreaTalk",
     links: {
       main: [
         {
-          url_external: "https://www.koreatalk.net/",
-          url_localhost: "./../../../../koreatalk/"
+          url_external: "https://www.koreatalk.me/",
+          url_localhost: "./../../../../koreatalk-me/"
         }
       ],
       usage: [
         {
-          url_external: "https://www.koreatalk.net/usage/",
-          url_localhost: "./../../../../koreatalk/usage/"
+          url_external: "https://www.koreatalk.me/usage/",
+          url_localhost: "./../../../../koreatalk-me/usage/"
         }
       ],
       store: [
         {
-          url_external: "https://www.koreatalk.net/store/",
-          url_localhost: "./../../../../koreatalk/store/"
+          url_external: "https://www.koreatalk.me/store/",
+          url_localhost: "./../../../../koreatalk-me/store/"
         }
       ],
       marketing: [
         {
-          url_external: "https://www.koreatalk.net/marketing/",
-          url_localhost: "./../../../../koreatalk/marketing/"
+          url_external: "https://www.koreatalk.me/marketing/",
+          url_localhost: "./../../../../koreatalk-me/marketing/"
         }
       ],
       school: [
         {
-          url_external: "https://www.koreatalk.net/school/",
-          url_localhost: "./../../../../koreatalk/school/"
+          url_external: "https://www.koreatalk.me/school/",
+          url_localhost: "./../../../../koreatalk-me/school/"
         }
       ],
       data: [
         {
-          url_external: "https://www.koreatalk.net/data/a/",
-          url_localhost: "./../../../../koreatalk/data/a/"
+          url_external: "https://www.koreatalk.me/data/a/",
+          url_localhost: "./../../../../koreatalk-me/data/a/"
         }
       ],
       payinfo: [
         {
-          url_external: "https://www.koreatalk.net/payinfo/",
-          url_localhost: "./../../../../koreatalk/payinfo/"
+          url_external: "https://www.koreatalk.me/payinfo/",
+          url_localhost: "./../../../../koreatalk-me/payinfo/"
         }
       ],
       kakao: [
         {
-          url_external: "https://www.koreatalk.net/kakao/",
-          url_localhost: "./../../../../koreatalk/kakao/"
+          url_external: "https://www.koreatalk.me/kakao/",
+          url_localhost: "./../../../../koreatalk-me/kakao/"
         }
       ],
       youtube: [
         {
-          url_external: "https://www.koreatalk.net/yt/",
-          url_localhost: "./../../../../koreatalk/yt/"
+          url_external: "https://www.koreatalk.me/yt/",
+          url_localhost: "./../../../../koreatalk-me/yt/"
         }
       ],
       instagram: [
         {
-          url_external: "https://www.koreatalk.net/ig/",
-          url_localhost: "./../../../../koreatalk/ig/"
+          url_external: "https://www.koreatalk.me/ig/",
+          url_localhost: "./../../../../koreatalk-me/ig/"
         }
       ],
       facebook: [
         {
-          url_external: "https://www.koreatalk.net/fb.kr/",
-          url_localhost: "./../../../../koreatalk/fb.kr/"
+          url_external: "https://www.koreatalk.me/fb.kr/",
+          url_localhost: "./../../../../koreatalk-me/fb.kr/"
         }
       ],
       threads: [
         {
-          url_external: "https://www.koreatalk.net/threads/",
-          url_localhost: "./../../../../koreatalk/threads/"
+          url_external: "https://www.koreatalk.me/threads/",
+          url_localhost: "./../../../../koreatalk-me/threads/"
         }
       ],
       "naver-blog": [
         {
-          url_external: "https://www.koreatalk.net/naver-blog/",
-          url_localhost: "./../../../../koreatalk/naver-blog/"
+          url_external: "https://www.koreatalk.me/naver-blog/",
+          url_localhost: "./../../../../koreatalk-me/naver-blog/"
         }
       ],
     }
