@@ -92,73 +92,73 @@ const services = [
       main: [
         {
           url_external: "https://www.koreatalk.net/",
-          url_localhost: "./../../../koreatalk-en/"
+          url_localhost: "./../../../koreatalk-net/"
         }
       ],
       usage: [
         {
           url_external: "https://www.koreatalk.net/usage/",
-          url_localhost: "./../../../koreatalk-en/usage/"
+          url_localhost: "./../../../koreatalk-net/usage/"
         }
       ],
       store: [
         {
           url_external: "https://www.koreatalk.net/store/",
-          url_localhost: "./../../../koreatalk-en/store/"
+          url_localhost: "./../../../koreatalk-net/store/"
         }
       ],
       marketing: [
         {
           url_external: "https://www.koreatalk.net/marketing/",
-          url_localhost: "./../../../koreatalk-en/marketing/"
+          url_localhost: "./../../../koreatalk-net/marketing/"
         }
       ],
       school: [
         {
           url_external: "https://www.koreatalk.net/school/",
-          url_localhost: "./../../../koreatalk-en/school/"
+          url_localhost: "./../../../koreatalk-net/school/"
         }
       ],
       data: [
         {
           url_external: "https://www.koreatalk.net/data/a/",
-          url_localhost: "./../../../koreatalk-en/data/a/"
+          url_localhost: "./../../../koreatalk-net/data/a/"
         }
       ],
       payinfo: [
         {
           url_external: "https://www.koreatalk.net/payinfo/",
-          url_localhost: "./../../../koreatalk-en/payinfo/"
+          url_localhost: "./../../../koreatalk-net/payinfo/"
         }
       ],
       kakao: [
         {
           url_external: "https://www.koreatalk.net/kakao/",
-          url_localhost: "./../../../koreatalk-en/kakao/"
+          url_localhost: "./../../../koreatalk-net/kakao/"
         }
       ],
       youtube: [
         {
           url_external: "https://www.koreatalk.net/yt/",
-          url_localhost: "./../../../koreatalk-en/yt/"
+          url_localhost: "./../../../koreatalk-net/yt/"
         }
       ],
       instagram: [
         {
           url_external: "https://www.koreatalk.net/ig/",
-          url_localhost: "./../../../koreatalk-en/ig/"
+          url_localhost: "./../../../koreatalk-net/ig/"
         }
       ],
       facebook: [
         {
           url_external: "https://www.koreatalk.net/fb.kr/",
-          url_localhost: "./../../../koreatalk-en/fb.kr/"
+          url_localhost: "./../../../koreatalk-net/fb.kr/"
         }
       ],
       threads: [
         {
           url_external: "https://www.koreatalk.net/threads/",
-          url_localhost: "./../../../koreatalk-en/threads/"
+          url_localhost: "./../../../koreatalk-net/threads/"
         }
       ]
     }
