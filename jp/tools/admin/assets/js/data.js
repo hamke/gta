@@ -155,6 +155,29 @@ const services = [
         }
       ]
     }
+  },
+
+  // -------------------------------------------------------
+  // www.koreatalk.jp
+  // -------------------------------------------------------
+  {
+    id: "koreatalk-jp-service",
+    name: "コリアトーク (Service)",
+    category: "KoreaTalk (JP)",
+    links: {
+      main: [
+        {
+          url_external: "https://www.koreatalk.jp/",
+          url_localhost: "./../../../../koreatalk-jp/"
+        }
+      ],
+      "auto-check-konest": [
+        {
+          url_external: "https://www.ttmkt.com/server/auto-check/konest/admin/",
+          url_localhost: "./../../../../ttmkt/server/auto-check/konest/admin/"
+        }
+      ]
+    }
   }
 ];
 
