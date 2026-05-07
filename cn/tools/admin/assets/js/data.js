@@ -67,7 +67,7 @@ const services = [
   // -------------------------------------------------------
   {
     id: "asiatalk-cn",
-    name: "亚洲谈 (AsiaTalk)",
+    name: "亚洲通 (AsiaTalk)",
     category: "AsiaTalk (CN)",
     links: {
       main: [
@@ -120,7 +120,7 @@ const services = [
   // -------------------------------------------------------
   {
     id: "koreatalk-cn",
-    name: "韩国谈 (KoreaTalk)",
+    name: "韩国通 (KoreaTalk)",
     category: "KoreaTalk",
     links: {
       main: [
@@ -193,6 +193,88 @@ const services = [
         {
           url_external: "https://www.koreatalk.cn/threads/",
           url_localhost: "./../../../../koreatalk-cn/threads/"
+        }
+      ]
+    }
+  },
+  // -------------------------------------------------------
+  // www.japantalk.cn
+  // -------------------------------------------------------
+  {
+    id: "japantalk-cn",
+    name: "日本通 (JapanTalk)",
+    category: "JapanTalk",
+    links: {
+      main: [
+        {
+          url_external: "https://www.japantalk.cn/",
+          url_localhost: "./../../../../japantalk-cn/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.japantalk.cn/usage/",
+          url_localhost: "./../../../../japantalk-cn/usage/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.japantalk.cn/store/",
+          url_localhost: "./../../../../japantalk-cn/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.japantalk.cn/marketing/",
+          url_localhost: "./../../../../japantalk-cn/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.japantalk.cn/school/",
+          url_localhost: "./../../../../japantalk-cn/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.japantalk.cn/data/a/",
+          url_localhost: "./../../../../japantalk-cn/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.japantalk.cn/payinfo/",
+          url_localhost: "./../../../../japantalk-cn/payinfo/"
+        }
+      ],
+      kakao: [
+        {
+          url_external: "https://www.japantalk.cn/kakao/",
+          url_localhost: "./../../../../japantalk-cn/kakao/"
+        }
+      ],
+      youtube: [
+        {
+          url_external: "https://www.japantalk.cn/yt/",
+          url_localhost: "./../../../../japantalk-cn/yt/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.japantalk.cn/ig/",
+          url_localhost: "./../../../../japantalk-cn/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.japantalk.cn/fb.kr/",
+          url_localhost: "./../../../../japantalk-cn/fb.kr/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.japantalk.cn/threads/",
+          url_localhost: "./../../../../japantalk-cn/threads/"
         }
       ]
     }
