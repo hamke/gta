@@ -178,6 +178,88 @@ const services = [
         }
       ]
     }
+  },
+  // -------------------------------------------------------
+  // www.chinatalk.jp
+  // -------------------------------------------------------
+  {
+    id: "chinatalk-jp",
+    name: "チャイナトーク (ChinaTalk.jp)",
+    category: "ChinaTalk (JP)",
+    links: {
+      main: [
+        {
+          url_external: "https://www.chinatalk.jp/",
+          url_localhost: "./../../../../chinatalk-jp/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.chinatalk.jp/usage/",
+          url_localhost: "./../../../../chinatalk-jp/usage/"
+        }
+      ],
+      "usage-kr": [
+        {
+          url_external: "https://www.chinatalk.jp/usage/kr/",
+          url_localhost: "./../../../../chinatalk-jp/usage/kr/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.chinatalk.jp/store/",
+          url_localhost: "./../../../../chinatalk-jp/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.chinatalk.jp/marketing/",
+          url_localhost: "./../../../../chinatalk-jp/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.chinatalk.jp/school/",
+          url_localhost: "./../../../../chinatalk-jp/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.chinatalk.jp/data/a/",
+          url_localhost: "./../../../../chinatalk-jp/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.chinatalk.jp/payinfo/",
+          url_localhost: "./../../../../chinatalk-jp/payinfo/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.chinatalk.jp/ig/",
+          url_localhost: "./../../../../chinatalk-jp/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.chinatalk.jp/fb/",
+          url_localhost: "./../../../../chinatalk-jp/fb/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.chinatalk.jp/threads/",
+          url_localhost: "./../../../../chinatalk-jp/threads/"
+        }
+      ],
+      ameblo: [
+        {
+          url_external: "https://www.chinatalk.jp/ameblo/",
+          url_localhost: "./../../../../chinatalk-jp/ameblo/"
+        }
+      ]
+    }
   }
 ];
 
