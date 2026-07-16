@@ -190,6 +190,12 @@ const services = [
           url_localhost: "./../../../../koreatalk-me/naver-blog/"
         }
       ],
+      types: [
+        {
+          url_external: "https://www.koreatalk.me/usage/types/",
+          url_localhost: "./../../../../koreatalk-me/usage/types/"
+        }
+      ]
     }
   },
   // -------------------------------------------------------
