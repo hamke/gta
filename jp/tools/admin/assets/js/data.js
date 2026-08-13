@@ -199,10 +199,10 @@ const services = [
           url_localhost: "./../../../../chinatalk-jp/usage/"
         }
       ],
-      "usage-kr": [
+      "usage-cn": [
         {
-          url_external: "https://www.chinatalk.jp/usage/kr/",
-          url_localhost: "./../../../../chinatalk-jp/usage/kr/"
+          url_external: "https://www.chinatalk.jp/usage/cn/",
+          url_localhost: "./../../../../chinatalk-jp/usage/cn/"
         }
       ],
       store: [
