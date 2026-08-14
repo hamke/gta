@@ -100,6 +100,12 @@ const services = [
           url_localhost: "./../../../../koreatalk-jp/usage/kr/"
         }
       ],
+      types: [
+        {
+          url_external: "https://www.koreatalk.jp/usage/types/",
+          url_localhost: "./../../../../koreatalk-jp/usage/types/"
+        }
+      ],
       store: [
         {
           url_external: "https://www.koreatalk.jp/store/",
@@ -203,12 +209,6 @@ const services = [
         {
           url_external: "https://www.chinatalk.jp/usage/cn/",
           url_localhost: "./../../../../chinatalk-jp/usage/cn/"
-        }
-      ],
-      types: [
-        {
-          url_external: "https://www.koreatalk.jp/usage/types/",
-          url_localhost: "./../../../../koreatalk-jp/usage/types/"
         }
       ],
       store: [
