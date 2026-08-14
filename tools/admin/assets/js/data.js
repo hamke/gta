@@ -110,7 +110,7 @@ const services = [
       types: [
         {
           url_external: "https://www.koreatalk.net/usage/types/",
-          url_localhost: "./../../../../koreatalk-net/usage/types/"
+          url_localhost: "./../../../koreatalk-net/usage/types/"
         }
       ],
       store: [
