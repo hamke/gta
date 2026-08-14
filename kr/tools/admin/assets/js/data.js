@@ -124,6 +124,12 @@ const services = [
           url_localhost: "./../../../../koreatalk-me/usage/"
         }
       ],
+      types: [
+        {
+          url_external: "https://www.koreatalk.me/usage/types/",
+          url_localhost: "./../../../../koreatalk-me/usage/types/"
+        }
+      ],
       store: [
         {
           url_external: "https://www.koreatalk.me/store/",
@@ -188,12 +194,6 @@ const services = [
         {
           url_external: "https://www.koreatalk.me/naver-blog/",
           url_localhost: "./../../../../koreatalk-me/naver-blog/"
-        }
-      ],
-      types: [
-        {
-          url_external: "https://www.koreatalk.me/usage/types/",
-          url_localhost: "./../../../../koreatalk-me/usage/types/"
         }
       ]
     }

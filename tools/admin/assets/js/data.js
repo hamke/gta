@@ -107,6 +107,12 @@ const services = [
           url_localhost: "./../../../koreatalk-net/usage/kr/"
         }
       ],
+      types: [
+        {
+          url_external: "https://www.koreatalk.net/usage/types/",
+          url_localhost: "./../../../../koreatalk-net/usage/types/"
+        }
+      ],
       store: [
         {
           url_external: "https://www.koreatalk.net/store/",
