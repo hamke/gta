@@ -234,8 +234,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.japantalk.tw/fb.kr/",
-          url_localhost: "./../../../../japantalk-tw/fb.kr/"
+          url_external: "https://www.japantalk.tw/fb/",
+          url_localhost: "./../../../../japantalk-tw/fb/"
         }
       ],
       threads: [

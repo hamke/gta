@@ -191,8 +191,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.koreatalk.cn/fb.kr/",
-          url_localhost: "./../../../../koreatalk-cn/fb.kr/"
+          url_external: "https://www.koreatalk.cn/fb/",
+          url_localhost: "./../../../../koreatalk-cn/fb/"
         }
       ],
       threads: [
@@ -273,8 +273,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.japantalk.cn/fb.kr/",
-          url_localhost: "./../../../../japantalk-cn/fb.kr/"
+          url_external: "https://www.japantalk.cn/fb/",
+          url_localhost: "./../../../../japantalk-cn/fb/"
         }
       ],
       threads: [
