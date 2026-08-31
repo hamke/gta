@@ -180,8 +180,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.koreatalk.me/fb.kr/",
-          url_localhost: "./../../../../koreatalk-me/fb.kr/"
+          url_external: "https://www.koreatalk.me/fb/",
+          url_localhost: "./../../../../koreatalk-me/fb/"
         }
       ],
       threads: [
