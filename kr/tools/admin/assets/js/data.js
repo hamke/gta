@@ -262,8 +262,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.usatalk.net/fb.kr/",
-          url_localhost: "./../../../../usatalk/fb.kr/"
+          url_external: "https://www.usatalk.net/fb/",
+          url_localhost: "./../../../../usatalk/fb/"
         }
       ],
       threads: [
@@ -344,8 +344,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.chinatalk.net/fb.kr/",
-          url_localhost: "./../../../../chinatalk/fb.kr/"
+          url_external: "https://www.chinatalk.net/fb/",
+          url_localhost: "./../../../../chinatalk/fb/"
         }
       ],
       threads: [
@@ -432,8 +432,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.japantalk.net/fb.kr/",
-          url_localhost: "./../../../../japantalk/fb.kr/"
+          url_external: "https://www.japantalk.net/fb/",
+          url_localhost: "./../../../../japantalk/fb/"
         }
       ],
       threads: [
@@ -514,8 +514,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.taiwantalk.net/fb.kr/",
-          url_localhost: "./../../../../taiwantalk/fb.kr/"
+          url_external: "https://www.taiwantalk.net/fb/",
+          url_localhost: "./../../../../taiwantalk/fb/"
         }
       ],
       threads: [
@@ -596,8 +596,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.vietnamtalk.net/fb.kr/",
-          url_localhost: "./../../../../vietnamtalk/fb.kr/"
+          url_external: "https://www.vietnamtalk.net/fb/",
+          url_localhost: "./../../../../vietnamtalk/fb/"
         }
       ],
       threads: [
@@ -678,8 +678,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.australiatalk.net/fb.kr/",
-          url_localhost: "./../../../../australiatalk/fb.kr/"
+          url_external: "https://www.australiatalk.net/fb/",
+          url_localhost: "./../../../../australiatalk/fb/"
         }
       ],
       threads: [
@@ -760,8 +760,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.canadatalk.net/fb.kr/",
-          url_localhost: "./../../../../canadatalk/fb.kr/"
+          url_external: "https://www.canadatalk.net/fb/",
+          url_localhost: "./../../../../canadatalk/fb/"
         }
       ],
       threads: [
@@ -842,8 +842,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.malaysiatalk.net/fb.kr/",
-          url_localhost: "./../../../../malaysiatalk/fb.kr/"
+          url_external: "https://www.malaysiatalk.net/fb/",
+          url_localhost: "./../../../../malaysiatalk/fb/"
         }
       ],
       threads: [
@@ -924,8 +924,8 @@ const services = [
       ],
       facebook: [
         {
-          url_external: "https://www.indonesiatalk.net/fb.kr/",
-          url_localhost: "./../../../../indonesiatalk/fb.kr/"
+          url_external: "https://www.indonesiatalk.net/fb/",
+          url_localhost: "./../../../../indonesiatalk/fb/"
         }
       ],
       threads: [
