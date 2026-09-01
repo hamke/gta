@@ -291,73 +291,73 @@ const services = [
       main: [
         {
           url_external: "https://www.chinatalk.net/",
-          url_localhost: "./../../../../chinatalk/"
+          url_localhost: "./../../../../chinatalk-net/"
         }
       ],
       usage: [
         {
           url_external: "https://www.chinatalk.net/usage/",
-          url_localhost: "./../../../../chinatalk/usage/"
+          url_localhost: "./../../../../chinatalk-net/usage/"
         }
       ],
       store: [
         {
           url_external: "https://www.chinatalk.net/store/",
-          url_localhost: "./../../../../chinatalk/store/"
+          url_localhost: "./../../../../chinatalk-net/store/"
         }
       ],
       marketing: [
         {
           url_external: "https://www.chinatalk.net/marketing/",
-          url_localhost: "./../../../../chinatalk/marketing/"
+          url_localhost: "./../../../../chinatalk-net/marketing/"
         }
       ],
       school: [
         {
           url_external: "https://www.chinatalk.net/school/",
-          url_localhost: "./../../../../chinatalk/school/"
+          url_localhost: "./../../../../chinatalk-net/school/"
         }
       ],
       data: [
         {
           url_external: "https://www.chinatalk.net/data/a/",
-          url_localhost: "./../../../../chinatalk/data/a/"
+          url_localhost: "./../../../../chinatalk-net/data/a/"
         }
       ],
       payinfo: [
         {
           url_external: "https://www.chinatalk.net/payinfo/",
-          url_localhost: "./../../../../chinatalk/payinfo/"
+          url_localhost: "./../../../../chinatalk-net/payinfo/"
         }
       ],
       kakao: [
         {
           url_external: "https://www.chinatalk.net/kakao/",
-          url_localhost: "./../../../../chinatalk/kakao/"
+          url_localhost: "./../../../../chinatalk-net/kakao/"
         }
       ],
       instagram: [
         {
           url_external: "https://www.chinatalk.net/ig/",
-          url_localhost: "./../../../../chinatalk/ig/"
+          url_localhost: "./../../../../chinatalk-net/ig/"
         }
       ],
       facebook: [
         {
           url_external: "https://www.chinatalk.net/fb/",
-          url_localhost: "./../../../../chinatalk/fb/"
+          url_localhost: "./../../../../chinatalk-net/fb/"
         }
       ],
       threads: [
         {
           url_external: "https://www.chinatalk.net/threads/",
-          url_localhost: "./../../../../chinatalk/threads/"
+          url_localhost: "./../../../../chinatalk-net/threads/"
         }
       ],
       "naver-blog": [
         {
           url_external: "https://www.chinatalk.net/naver-blog/",
-          url_localhost: "./../../../../chinatalk/naver-blog/"
+          url_localhost: "./../../../../chinatalk-net/naver-blog/"
         }
       ],
     }
@@ -373,79 +373,79 @@ const services = [
       main: [
         {
           url_external: "https://www.japantalk.net/",
-          url_localhost: "./../../../../japantalk/"
+          url_localhost: "./../../../../japantalk-net/"
         }
       ],
       usage: [
         {
           url_external: "https://www.japantalk.net/usage/",
-          url_localhost: "./../../../../japantalk/usage/"
+          url_localhost: "./../../../../japantalk-net/usage/"
         }
       ],
       "usage-jp": [
         {
           url_external: "https://www.japantalk.net/usage/jp/",
-          url_localhost: "./../../../../japantalk/usage/jp/"
+          url_localhost: "./../../../../japantalk-net/usage/jp/"
         }
       ],
       store: [
         {
           url_external: "https://www.japantalk.net/store/",
-          url_localhost: "./../../../../japantalk/store/"
+          url_localhost: "./../../../../japantalk-net/store/"
         }
       ],
       marketing: [
         {
           url_external: "https://www.japantalk.net/marketing/",
-          url_localhost: "./../../../../japantalk/marketing/"
+          url_localhost: "./../../../../japantalk-net/marketing/"
         }
       ],
       school: [
         {
           url_external: "https://www.japantalk.net/school/",
-          url_localhost: "./../../../../japantalk/school/"
+          url_localhost: "./../../../../japantalk-net/school/"
         }
       ],
       data: [
         {
           url_external: "https://www.japantalk.net/data/a/",
-          url_localhost: "./../../../../japantalk/data/a/"
+          url_localhost: "./../../../../japantalk-net/data/a/"
         }
       ],
       payinfo: [
         {
           url_external: "https://www.japantalk.net/payinfo/",
-          url_localhost: "./../../../../japantalk/payinfo/"
+          url_localhost: "./../../../../japantalk-net/payinfo/"
         }
       ],
       kakao: [
         {
           url_external: "https://www.japantalk.net/kakao/",
-          url_localhost: "./../../../../japantalk/kakao/"
+          url_localhost: "./../../../../japantalk-net/kakao/"
         }
       ],
       instagram: [
         {
           url_external: "https://www.japantalk.net/ig/",
-          url_localhost: "./../../../../japantalk/ig/"
+          url_localhost: "./../../../../japantalk-net/ig/"
         }
       ],
       facebook: [
         {
           url_external: "https://www.japantalk.net/fb/",
-          url_localhost: "./../../../../japantalk/fb/"
+          url_localhost: "./../../../../japantalk-net/fb/"
         }
       ],
       threads: [
         {
           url_external: "https://www.japantalk.net/threads/",
-          url_localhost: "./../../../../japantalk/threads/"
+          url_localhost: "./../../../../japantalk-net/threads/"
         }
       ],
       "naver-blog": [
         {
           url_external: "https://www.japantalk.net/naver-blog/",
-          url_localhost: "./../../../../japantalk/naver-blog/"
+          url_localhost: "./../../../../japantalk-net/naver-blog/"
         }
       ],
     }
