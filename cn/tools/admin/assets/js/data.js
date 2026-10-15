@@ -284,6 +284,88 @@ const services = [
         }
       ]
     }
+  },
+  // -------------------------------------------------------
+  // www.usatalk.cn
+  // -------------------------------------------------------
+  {
+    id: "usatalk-cn",
+    name: "美国通 (USATalk)",
+    category: "USATalk",
+    links: {
+      main: [
+        {
+          url_external: "https://www.usatalk.cn/",
+          url_localhost: "./../../../../usatalk-cn/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.usatalk.cn/usage/",
+          url_localhost: "./../../../../usatalk-cn/usage/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.usatalk.cn/store/",
+          url_localhost: "./../../../../usatalk-cn/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.usatalk.cn/marketing/",
+          url_localhost: "./../../../../usatalk-cn/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.usatalk.cn/school/",
+          url_localhost: "./../../../../usatalk-cn/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.usatalk.cn/data/a/",
+          url_localhost: "./../../../../usatalk-cn/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.usatalk.cn/payinfo/",
+          url_localhost: "./../../../../usatalk-cn/payinfo/"
+        }
+      ],
+      kakao: [
+        {
+          url_external: "https://www.usatalk.cn/kakao/",
+          url_localhost: "./../../../../usatalk-cn/kakao/"
+        }
+      ],
+      youtube: [
+        {
+          url_external: "https://www.usatalk.cn/yt/",
+          url_localhost: "./../../../../usatalk-cn/yt/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.usatalk.cn/ig/",
+          url_localhost: "./../../../../usatalk-cn/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.usatalk.cn/fb/",
+          url_localhost: "./../../../../usatalk-cn/fb/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.usatalk.cn/threads/",
+          url_localhost: "./../../../../usatalk-cn/threads/"
+        }
+      ]
+    }
   }
 ];
 

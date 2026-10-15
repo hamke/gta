@@ -266,6 +266,82 @@ const services = [
         }
       ]
     }
+  },
+  // -------------------------------------------------------
+  // www.usatalk.jp
+  // -------------------------------------------------------
+  {
+    id: "usatalk-jp",
+    name: "アメリカトーク (USATalk.jp)",
+    category: "USATalk (JP)",
+    links: {
+      main: [
+        {
+          url_external: "https://www.usatalk.jp/",
+          url_localhost: "./../../../../usatalk-jp/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.usatalk.jp/usage/",
+          url_localhost: "./../../../../usatalk-jp/usage/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.usatalk.jp/store/",
+          url_localhost: "./../../../../usatalk-jp/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.usatalk.jp/marketing/",
+          url_localhost: "./../../../../usatalk-jp/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.usatalk.jp/school/",
+          url_localhost: "./../../../../usatalk-jp/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.usatalk.jp/data/a/",
+          url_localhost: "./../../../../usatalk-jp/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.usatalk.jp/payinfo/",
+          url_localhost: "./../../../../usatalk-jp/payinfo/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.usatalk.jp/ig/",
+          url_localhost: "./../../../../usatalk-jp/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.usatalk.jp/fb/",
+          url_localhost: "./../../../../usatalk-jp/fb/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.usatalk.jp/threads/",
+          url_localhost: "./../../../../usatalk-jp/threads/"
+        }
+      ],
+      ameblo: [
+        {
+          url_external: "https://www.usatalk.jp/ameblo/",
+          url_localhost: "./../../../../usatalk-jp/ameblo/"
+        }
+      ]
+    }
   }
 ];
 
