@@ -81,7 +81,7 @@ const services = [
   {
     id: "koreatalk-tw",
     name: "韓國通 (KoreaTalk)",
-    category: "KoreaTalk",
+    category: "KoreaTalk (TW)",
     links: {
       main: [
         {
@@ -170,7 +170,7 @@ const services = [
   {
     id: "japantalk-tw",
     name: "日本通 (JapanTalk)",
-    category: "JapanTalk",
+    category: "JapanTalk (TW)",
     links: {
       main: [
         {

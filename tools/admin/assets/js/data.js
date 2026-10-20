@@ -87,7 +87,7 @@ const services = [
   {
     id: "koreatalk-net",
     name: "KoreaTalk",
-    category: "KoreaTalk",
+    category: "KoreaTalk (KR)",
     links: {
       main: [
         {

@@ -121,7 +121,7 @@ const services = [
   {
     id: "koreatalk-cn",
     name: "韩国通 (KoreaTalk)",
-    category: "KoreaTalk",
+    category: "KoreaTalk (CN)",
     links: {
       main: [
         {
@@ -209,7 +209,7 @@ const services = [
   {
     id: "japantalk-cn",
     name: "日本通 (JapanTalk)",
-    category: "JapanTalk",
+    category: "JapanTalk (CN)",
     links: {
       main: [
         {
@@ -291,7 +291,7 @@ const services = [
   {
     id: "usatalk-cn",
     name: "美国通 (USATalk)",
-    category: "USATalk",
+    category: "USATalk (CN)",
     links: {
       main: [
         {
