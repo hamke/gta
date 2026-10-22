@@ -300,6 +300,12 @@ const services = [
           url_localhost: "./../../../../chinatalk-net/usage/"
         }
       ],
+      "usage-cn": [
+        {
+          url_external: "https://www.chinatalk.net/usage/cn/",
+          url_localhost: "./../../../../chinatalk-net/usage/cn/"
+        }
+      ],
       store: [
         {
           url_external: "https://www.chinatalk.net/store/",
@@ -468,6 +474,12 @@ const services = [
         {
           url_external: "https://www.taiwantalk.net/usage/",
           url_localhost: "./../../../../taiwantalk/usage/"
+        }
+      ],
+      "usage-tw": [
+        {
+          url_external: "https://www.taiwantalk.net/usage/tw/",
+          url_localhost: "./../../../../taiwantalk/usage/tw/"
         }
       ],
       store: [
