@@ -87,7 +87,7 @@ const services = [
   {
     id: "koreatalk-net",
     name: "KoreaTalk",
-    category: "KoreaTalk (KR)",
+    category: "KoreaTalk (EN)",
     links: {
       main: [
         {
@@ -171,6 +171,101 @@ const services = [
         {
           url_external: "https://www.koreatalk.net/threads/",
           url_localhost: "./../../../koreatalk-net/threads/"
+        }
+      ]
+    }
+  },
+
+  // -------------------------------------------------------
+  // www.chinatalk.app
+  // -------------------------------------------------------
+  {
+    id: "chinatalk-app",
+    name: "ChinaTalk",
+    category: "ChinaTalk (EN)",
+    links: {
+      main: [
+        {
+          url_external: "https://www.chinatalk.app/",
+          url_localhost: "./../../../chinatalk-app/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.chinatalk.app/usage/",
+          url_localhost: "./../../../chinatalk-app/usage/"
+        }
+      ],
+      "usage-cn": [
+        {
+          url_external: "https://www.chinatalk.app/usage/cn/",
+          url_localhost: "./../../../chinatalk-app/usage/cn/"
+        }
+      ],
+      types: [
+        {
+          url_external: "https://www.chinatalk.app/usage/types/",
+          url_localhost: "./../../../chinatalk-app/usage/types/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.chinatalk.app/store/",
+          url_localhost: "./../../../chinatalk-app/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.chinatalk.app/marketing/",
+          url_localhost: "./../../../chinatalk-app/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.chinatalk.app/school/",
+          url_localhost: "./../../../chinatalk-app/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.chinatalk.app/data/a/",
+          url_localhost: "./../../../chinatalk-app/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.chinatalk.app/payinfo/",
+          url_localhost: "./../../../chinatalk-app/payinfo/"
+        }
+      ],
+      qq: [
+        {
+          url_external: "https://www.chinatalk.app/qq/",
+          url_localhost: "./../../../chinatalk-app/qq/"
+        }
+      ],
+      youtube: [
+        {
+          url_external: "https://www.chinatalk.app/yt/",
+          url_localhost: "./../../../chinatalk-app/yt/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.chinatalk.app/ig/",
+          url_localhost: "./../../../chinatalk-app/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.chinatalk.app/fb/",
+          url_localhost: "./../../../chinatalk-app/fb/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.chinatalk.app/threads/",
+          url_localhost: "./../../../chinatalk-app/threads/"
         }
       ]
     }
