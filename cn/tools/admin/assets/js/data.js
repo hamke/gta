@@ -372,6 +372,88 @@ const services = [
         }
       ]
     }
+  },
+  // -------------------------------------------------------
+  // www.vietnamtalk.cn
+  // -------------------------------------------------------
+  {
+    id: "vietnamtalk-cn",
+    name: "越南通 (VietnamTalk)",
+    category: "VietnamTalk (CN)",
+    links: {
+      main: [
+        {
+          url_external: "https://www.vietnamtalk.cn/",
+          url_localhost: "./../../../../vietnamtalk-cn/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.vietnamtalk.cn/usage/",
+          url_localhost: "./../../../../vietnamtalk-cn/usage/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.vietnamtalk.cn/store/",
+          url_localhost: "./../../../../vietnamtalk-cn/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.vietnamtalk.cn/marketing/",
+          url_localhost: "./../../../../vietnamtalk-cn/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.vietnamtalk.cn/school/",
+          url_localhost: "./../../../../vietnamtalk-cn/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.vietnamtalk.cn/data/a/",
+          url_localhost: "./../../../../vietnamtalk-cn/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.vietnamtalk.cn/payinfo/",
+          url_localhost: "./../../../../vietnamtalk-cn/payinfo/"
+        }
+      ],
+      kakao: [
+        {
+          url_external: "https://www.vietnamtalk.cn/kakao/",
+          url_localhost: "./../../../../vietnamtalk-cn/kakao/"
+        }
+      ],
+      youtube: [
+        {
+          url_external: "https://www.vietnamtalk.cn/yt/",
+          url_localhost: "./../../../../vietnamtalk-cn/yt/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.vietnamtalk.cn/ig/",
+          url_localhost: "./../../../../vietnamtalk-cn/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.vietnamtalk.cn/fb/",
+          url_localhost: "./../../../../vietnamtalk-cn/fb/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.vietnamtalk.cn/threads/",
+          url_localhost: "./../../../../vietnamtalk-cn/threads/"
+        }
+      ]
+    }
   }
 ];
 
