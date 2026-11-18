@@ -177,6 +177,101 @@ const services = [
   },
 
   // -------------------------------------------------------
+  // www.japantalk.app
+  // -------------------------------------------------------
+  {
+    id: "japantalk-app",
+    name: "JapanTalk",
+    category: "JapanTalk (EN)",
+    links: {
+      main: [
+        {
+          url_external: "https://www.japantalk.app/",
+          url_localhost: "./../../../japantalk-app/"
+        }
+      ],
+      usage: [
+        {
+          url_external: "https://www.japantalk.app/usage/",
+          url_localhost: "./../../../japantalk-app/usage/"
+        }
+      ],
+      "usage-jp": [
+        {
+          url_external: "https://www.japantalk.app/usage/jp/",
+          url_localhost: "./../../../japantalk-app/usage/jp/"
+        }
+      ],
+      types: [
+        {
+          url_external: "https://www.japantalk.app/usage/types/",
+          url_localhost: "./../../../japantalk-app/usage/types/"
+        }
+      ],
+      store: [
+        {
+          url_external: "https://www.japantalk.app/store/",
+          url_localhost: "./../../../japantalk-app/store/"
+        }
+      ],
+      marketing: [
+        {
+          url_external: "https://www.japantalk.app/marketing/",
+          url_localhost: "./../../../japantalk-app/marketing/"
+        }
+      ],
+      school: [
+        {
+          url_external: "https://www.japantalk.app/school/",
+          url_localhost: "./../../../japantalk-app/school/"
+        }
+      ],
+      data: [
+        {
+          url_external: "https://www.japantalk.app/data/a/",
+          url_localhost: "./../../../japantalk-app/data/a/"
+        }
+      ],
+      payinfo: [
+        {
+          url_external: "https://www.japantalk.app/payinfo/",
+          url_localhost: "./../../../japantalk-app/payinfo/"
+        }
+      ],
+      line: [
+        {
+          url_external: "https://www.japantalk.app/line/",
+          url_localhost: "./../../../japantalk-app/line/"
+        }
+      ],
+      youtube: [
+        {
+          url_external: "https://www.japantalk.app/yt/",
+          url_localhost: "./../../../japantalk-app/yt/"
+        }
+      ],
+      instagram: [
+        {
+          url_external: "https://www.japantalk.app/ig/",
+          url_localhost: "./../../../japantalk-app/ig/"
+        }
+      ],
+      facebook: [
+        {
+          url_external: "https://www.japantalk.app/fb/",
+          url_localhost: "./../../../japantalk-app/fb/"
+        }
+      ],
+      threads: [
+        {
+          url_external: "https://www.japantalk.app/threads/",
+          url_localhost: "./../../../japantalk-app/threads/"
+        }
+      ]
+    }
+  }
+
+  // -------------------------------------------------------
   // www.chinatalk.app
   // -------------------------------------------------------
   {
