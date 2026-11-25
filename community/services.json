@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "updated": "2026-11-25",
+  "labels": {
+    "All": "All languages",
+    "English": "English",
+    "Chinese": "中文",
+    "Japanese": "日本語",
+    "Korean": "한국어"
+  },
+  "sites": [
+    {
+      "country": "Korea",
+      "lang": "English",
+      "name": "KoreaTalk",
+      "domain": "www.koreatalk.net",
+      "active": true
+    },
+    {
+      "country": "Japan",
+      "lang": "English",
+      "name": "JapanTalk",
+      "domain": "www.japantalk.app",
+      "active": true
+    },
+    {
+      "country": "China",
+      "lang": "English",
+      "name": "ChinaTalk",
+      "domain": "www.chinatalk.app",
+      "active": true
+    },
+    {
+      "country": "Korea",
+      "lang": "Chinese",
+      "name": "KoreaTalk (韩国通)",
+      "domain": "www.koreatalk.cn",
+      "active": true
+    },
+    {
+      "country": "Japan",
+      "lang": "Chinese",
+      "name": "JapanTalk (日本通)",
+      "domain": "www.japantalk.cn",
+      "active": true
+    },
+    {
+      "country": "Korea",
+      "lang": "Chinese",
+      "name": "KoreaTalk (韓國通)",
+      "domain": "www.koreatalk.tw",
+      "active": false
+    },
+    {
+      "country": "Japan",
+      "lang": "Chinese",
+      "name": "JapanTalk (日本通)",
+      "domain": "www.japantalk.tw",
+      "active": false
+    },
+    {
+      "country": "USA",
+      "lang": "Chinese",
+      "name": "USATalk (美国通)",
+      "domain": "www.usatalk.cn",
+      "active": false
+    },
+    {
+      "country": "Vietnam",
+      "lang": "Chinese",
+      "name": "VietnamTalk (越南通)",
+      "domain": "www.vietnamtalk.cn",
+      "active": false
+    },
+    {
+      "country": "Korea",
+      "lang": "Japanese",
+      "name": "KoreaTalk (コリアトーク)",
+      "domain": "www.koreatalk.jp",
+      "active": true
+    },
+    {
+      "country": "China",
+      "lang": "Japanese",
+      "name": "ChinaTalk (チャイナトーク)",
+      "domain": "www.chinatalk.jp",
+      "active": true
+    },
+    {
+      "country": "USA",
+      "lang": "Japanese",
+      "name": "USATalk (アメリカトーク)",
+      "domain": "www.usatalk.jp",
+      "active": false
+    },
+    {
+      "country": "Vietnam",
+      "lang": "Japanese",
+      "name": "VietnamTalk (ベトナムトーク)",
+      "domain": "www.vietnamtalk.jp",
+      "active": false
+    },
+    {
+      "country": "USA",
+      "lang": "Korean",
+      "name": "USATalk (미국톡)",
+      "domain": "www.usatalk.net",
+      "active": true
+    },
+    {
+      "country": "Japan",
+      "lang": "Korean",
+      "name": "JapanTalk (재팬톡)",
+      "domain": "www.japantalk.net",
+      "active": true
+    },
+    {
+      "country": "China",
+      "lang": "Korean",
+      "name": "ChinaTalk (차이나톡)",
+      "domain": "www.chinatalk.net",
+      "active": true
+    },
+    {
+      "country": "Taiwan",
+      "lang": "Korean",
+      "name": "TaiwanTalk (타이완톡)",
+      "domain": "www.taiwantalk.net",
+      "active": true
+    },
+    {
+      "country": "Vietnam",
+      "lang": "Korean",
+      "name": "VietnamTalk (베트남톡)",
+      "domain": "www.vietnamtalk.net",
+      "active": true
+    },
+    {
+      "country": "Canada",
+      "lang": "Korean",
+      "name": "CanadaTalk (캐나다톡)",
+      "domain": "www.canadatalk.net",
+      "active": false
+    },
+    {
+      "country": "Australia",
+      "lang": "Korean",
+      "name": "AustraliaTalk (호주톡)",
+      "domain": "www.australiatalk.net",
+      "active": false
+    },
+    {
+      "country": "Malaysia",
+      "lang": "Korean",
+      "name": "MalaysiaTalk (말레이시아톡)",
+      "domain": "www.malaysiatalk.net",
+      "active": false
+    },
+    {
+      "country": "Indonesia",
+      "lang": "Korean",
+      "name": "IndonesiaTalk (인도네시아톡)",
+      "domain": "www.indonesiatalk.net",
+      "active": false
+    }
+  ]
+}
