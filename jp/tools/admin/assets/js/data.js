@@ -74,6 +74,29 @@ const services = [
       ]
     }
   },
+
+  // -------------------------------------------------------
+  // www.globaltalk.asia/jp/tools/
+  // -------------------------------------------------------
+  {
+    id: "globaltalkasia-service",
+    name: "グローバルトークアジア (オンラインツール)",
+    category: "GlobalTalkAsia",
+    links: {
+      main: [
+        {
+          url_external: "https://www.globaltalk.asia/jp/tools/",
+          url_localhost: "./../../../../globaltalkasia/jp/tools/"
+        }
+      ],
+      "invoice-generator": [
+        {
+          url_external: "https://www.globaltalk.asia/jp/tools/invoice-generator/",
+          url_localhost: "./../../../../globaltalkasia/jp/tools/invoice-generator/"
+        }
+      ]
+    }
+  },
   // -------------------------------------------------------
   // www.koreatalk.jp
   // -------------------------------------------------------

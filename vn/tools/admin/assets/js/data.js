@@ -73,6 +73,29 @@ const services = [
         }
       ]
     }
+  },
+
+  // -------------------------------------------------------
+  // www.globaltalk.asia/vn/tools/
+  // -------------------------------------------------------
+  {
+    id: "globaltalkasia-service",
+    name: "GlobalTalkAsia (Online Tools)",
+    category: "GlobalTalkAsia",
+    links: {
+      main: [
+        {
+          url_external: "https://www.globaltalk.asia/vn/tools/",
+          url_localhost: "./../../../../globaltalkasia/vn/tools/"
+        }
+      ],
+      "invoice-generator": [
+        {
+          url_external: "https://www.globaltalk.asia/vn/tools/invoice-generator/",
+          url_localhost: "./../../../../globaltalkasia/vn/tools/invoice-generator/"
+        }
+      ]
+    }
   }
 ];
 

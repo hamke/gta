@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap'); */
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <h1>INVOICE</h1>
+        </div>
+
+        <div class="top-section">
+            <div class="client">
+                <div class="client-name">To: [Client Company Name]</div>
+                <p class="client-text">Please find the details of our invoice below.</p>
+                <div class="total-box">
+                    <span class="total-label">Amount Due (USD)</span>
+                    <span class="total-amount">$4,000.00</span>
+                </div>
+                <div class="due-date">Due Date: December 31, 2026</div>
+            </div>
+            <div class="meta">
+                <div class="meta-row"><span class="meta-label">Invoice Date</span><span>November 27, 2026</span></div>
+                <div class="meta-row"><span class="meta-label">Invoice No.</span><span>GTA-20261127-01</span></div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-label">Issued by :</span>
+                <span class="info-content">Leden Ventures (Republic of Korea / Business Reg. No. 211-10-43189)</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Contact :</span>
+                <span class="info-content">hello@globaltalk.asia / +82-70-4906-9888</span>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-category">Category</th>
+                    <th class="col-details">Description</th>
+                    <th class="col-price">Unit Price</th>
+                    <th class="col-qty">Qty</th>
+                    <th class="col-amount">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Advertising</td>
+                    <td>JapanTalk Advertising</td>
+                    <td class="number">$2,000.00</td>
+                    <td>1</td>
+                    <td class="number">$2,000.00</td>
+                </tr>
+                <tr>
+                    <td>Advertising</td>
+                    <td>TaiwanTalk Advertising</td>
+                    <td class="number">$2,000.00</td>
+                    <td>1</td>
+                    <td class="number">$2,000.00</td>
+                </tr>
+                <!-- <tr class="row-empty"><td></td><td></td><td></td><td></td><td></td></tr> -->
+                <tr class="row-empty"><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr class="row-summary">
+                    <td colspan="4">Subtotal</td>
+                    <td class="number">$4,000.00</td>
+                </tr>
+                <tr class="row-summary">
+                    <td colspan="4">Tax (0%)</td>
+                    <td class="number">$0.00</td>
+                </tr>
+                <tr class="row-summary bg-gray">
+                    <td colspan="4"><strong>Total</strong></td>
+                    <td class="number"><strong>$4,000.00</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bank-section">
+            <div class="bank-title">Bank Details</div>
+            <div class="bank-body">
+                <div>Bank Name: [Bank Name / Branch]</div>
+                <div>SWIFT Code: [XXXXXXXX]</div>
+                <div>Account No.: [0000000000]</div>
+                <div>Account Holder: [Account Name]</div>
+                <div class="bank-note">* All remittance and bank charges are to be borne by the remitter.</div>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            Thank you for your business.
+        </div>
+
+        <div class="signature-section">
+            <span class="signature-label">Authorized by :</span>
+            <span class="signature-name">Sangho Lee</span>
+            <img src="https://hellotblog.wordpress.com/wp-content/uploads/2019/05/signature_leesangho_100x100.png" style="width:60px;">
+        </div>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #000;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        @media print {
+            @page { size: A4; margin: 0; }
+            body {
+                background: none;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            letter-spacing: 14px;
+            font-weight: 700;
+            padding-left: 14px; /* To center with letter-spacing */
+            margin-bottom: 0;
+        }
+
+        .header h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+
+        .client {
+            width: 60%;
+        }
+
+        .client-name {
+            font-size: 20px;
+            font-weight: 700;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 6px;
+        }
+
+        .client-text {
+            font-size: 14px;
+            margin: 12px 0;
+        }
+
+        .total-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 3px double #000;
+            padding: 6px 4px;
+        }
+
+        .total-label {
+            font-size: 15px;
+        }
+
+        .total-amount {
+            white-space: nowrap;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .amount-words {
+            font-size: 13px;
+            text-align: right;
+            margin-top: 6px;
+        }
+
+        .due-date {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .meta {
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .meta-row {
+            display: flex;
+        }
+
+        .meta-label {
+            min-width: 70px;
+            margin-right: 14px;
+        }
+
+        .info-section {
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .info-label {
+            width: 110px;
+            position: relative;
+            padding-left: 20px;
+            font-weight: 400;
+        }
+
+        .info-label::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+            table-layout: fixed;
+            border: 1.5px solid #000;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 10px 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #e8e8e8 !important;
+            font-weight: 700;
+        }
+
+        td.number {
+            font-size: 13px;
+            text-align: right;
+        }
+
+        .col-category { width: 16%; }
+        .col-details { width: 36%; }
+        .col-price { width: 18%; }
+        .col-qty { width: 10%; }
+        .col-amount { width: 20%; }
+
+        .row-empty td {
+            height: 36px;
+        }
+
+        .row-summary td {
+            font-weight: 400;
+        }
+
+        .bg-gray {
+            background-color: #f2f2f2 !important;
+        }
+
+        .bank-section {
+            border: 1px solid #000;
+            margin-bottom: 28px;
+            font-size: 14px;
+        }
+
+        .bank-title {
+            background-color: #e8e8e8 !important;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-bottom: 1px solid #000;
+        }
+
+        .bank-body {
+            padding: 10px 12px;
+            line-height: 1.8;
+        }
+
+        .bank-note {
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-bottom: 28px;
+            font-size: 16px;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 16px;
+            padding-right: 10mm;
+        }
+
+        .signature-label {
+            margin-right: 20px;
+        }
+
+        .signature-name {
+            margin-right: 15px;
+            letter-spacing: 3px;
+        }
+    </style>
+</body>
+</html>

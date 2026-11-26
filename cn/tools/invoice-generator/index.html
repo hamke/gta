@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账单(Invoice)</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap'); */
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <h1>账 单</h1>
+            <h2>INVOICE</h2>
+        </div>
+
+        <div class="top-section">
+            <div class="client">
+                <div class="client-name">致：〇〇〇〇有限公司</div>
+                <p class="client-text">兹将费用明细列示如下，敬请核对并按时付款。</p>
+                <div class="total-box">
+                    <span class="total-label">应付金额（含税）</span>
+                    <span class="total-amount">¥25,440.00</span>
+                </div>
+                <div class="amount-words">大写：人民币贰万伍仟肆佰肆拾元整</div>
+                <div class="due-date">付款期限：2026年12月31日</div>
+            </div>
+            <div class="meta">
+                <div class="meta-row"><span class="meta-label">开具日期</span><span>2026年11月27日</span></div>
+                <div class="meta-row"><span class="meta-label">账单编号</span><span>GTA-20261127-01</span></div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-label">开具方：</span>
+                <span class="info-content">Leden Ventures（韩国 / 营业登记号：211-10-43189）</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">联系方式：</span>
+                <span class="info-content">hello@globaltalk.asia / +82-70-4906-9888</span>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-category">类别</th>
+                    <th class="col-details">项目内容</th>
+                    <th class="col-price">单价</th>
+                    <th class="col-qty">数量</th>
+                    <th class="col-amount">金额</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>广告</td>
+                    <td>JapanTalk 广告投放</td>
+                    <td class="number">12,000.00 元</td>
+                    <td>1</td>
+                    <td class="number">12,000.00 元</td>
+                </tr>
+                <tr>
+                    <td>广告</td>
+                    <td>TaiwanTalk 广告投放</td>
+                    <td class="number">12,000.00 元</td>
+                    <td>1</td>
+                    <td class="number">12,000.00 元</td>
+                </tr>
+                <!-- <tr class="row-empty"><td></td><td></td><td></td><td></td><td></td></tr> -->
+                <tr class="row-empty"><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr class="row-summary">
+                    <td colspan="4">小计</td>
+                    <td class="number">24,000.00 元</td>
+                </tr>
+                <tr class="row-summary">
+                    <td colspan="4">增值税（6%）</td>
+                    <td class="number">1,440.00 元</td>
+                </tr>
+                <tr class="row-summary bg-gray">
+                    <td colspan="4"><strong>合计（含税）</strong></td>
+                    <td class="number"><strong>25,440.00 元</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bank-section">
+            <div class="bank-title">收款账户</div>
+            <div class="bank-body">
+                <div>开户银行：〇〇银行 〇〇支行</div>
+                <div>SWIFT代码：XXXXXXXX</div>
+                <div>银行账号：0000000000</div>
+                <div>账户名称：〇〇〇〇</div>
+                <div class="bank-note">※ 汇款手续费由付款方承担。</div>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            感谢您的支持与合作！
+        </div>
+
+        <div class="signature-section">
+            <span class="signature-label">经办人：</span>
+            <span class="signature-name">Sangho Lee</span>
+            <img src="https://hellotblog.wordpress.com/wp-content/uploads/2019/05/signature_leesangho_100x100.png" style="width:60px;">
+        </div>
+    </div>
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #000;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        @media print {
+            @page { size: A4; margin: 0; }
+            body {
+                background: none;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            letter-spacing: 14px;
+            font-weight: 700;
+            padding-left: 14px; /* To center with letter-spacing */
+        }
+
+        .header h2 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+        }
+
+        .client {
+            width: 60%;
+        }
+
+        .client-name {
+            font-size: 20px;
+            font-weight: 700;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 6px;
+        }
+
+        .client-text {
+            font-size: 14px;
+            margin: 12px 0;
+        }
+
+        .total-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 3px double #000;
+            padding: 6px 4px;
+        }
+
+        .total-label {
+            font-size: 15px;
+        }
+
+        .total-amount {
+            white-space: nowrap;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .amount-words {
+            font-size: 13px;
+            text-align: right;
+            margin-top: 6px;
+        }
+
+        .due-date {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .meta {
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        .meta-row {
+            display: flex;
+        }
+
+        .meta-label {
+            min-width: 70px;
+            margin-right: 14px;
+        }
+
+        .info-section {
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .info-label {
+            width: 110px;
+            position: relative;
+            padding-left: 20px;
+            font-weight: 400;
+        }
+
+        .info-label::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 24px;
+            table-layout: fixed;
+            border: 1.5px solid #000;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 10px 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #e8e8e8 !important;
+            font-weight: 700;
+        }
+
+        td.number {
+            font-size: 13px;
+            text-align: right;
+        }
+
+        .col-category { width: 12%; }
+        .col-details { width: 40%; }
+        .col-price { width: 18%; }
+        .col-qty { width: 10%; }
+        .col-amount { width: 20%; }
+
+        .row-empty td {
+            height: 36px;
+        }
+
+        .row-summary td {
+            font-weight: 400;
+        }
+
+        .bg-gray {
+            background-color: #f2f2f2 !important;
+        }
+
+        .bank-section {
+            border: 1px solid #000;
+            margin-bottom: 28px;
+            font-size: 14px;
+        }
+
+        .bank-title {
+            background-color: #e8e8e8 !important;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-bottom: 1px solid #000;
+        }
+
+        .bank-body {
+            padding: 10px 12px;
+            line-height: 1.8;
+        }
+
+        .bank-note {
+            font-size: 12px;
+            margin-top: 4px;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-bottom: 28px;
+            font-size: 16px;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 16px;
+            padding-right: 10mm;
+        }
+
+        .signature-label {
+            margin-right: 20px;
+        }
+
+        .signature-name {
+            margin-right: 15px;
+            letter-spacing: 3px;
+        }
+    </style>
+</body>
+</html>

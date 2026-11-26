@@ -62,6 +62,29 @@ const services = [
       ]
     }
   },
+
+  // -------------------------------------------------------
+  // www.globaltalk.asia/cn/tools/
+  // -------------------------------------------------------
+  {
+    id: "globaltalkasia-service",
+    name: "GlobalTalkAsia (Online Tools)",
+    category: "GlobalTalkAsia",
+    links: {
+      main: [
+        {
+          url_external: "https://www.globaltalk.asia/cn/tools/",
+          url_localhost: "./../../../../globaltalkasia/cn/tools/"
+        }
+      ],
+      "invoice-generator": [
+        {
+          url_external: "https://www.globaltalk.asia/cn/tools/invoice-generator/",
+          url_localhost: "./../../../../globaltalkasia/cn/tools/invoice-generator/"
+        }
+      ]
+    }
+  },
   // -------------------------------------------------------
   // www.asiatalk.cn
   // -------------------------------------------------------
