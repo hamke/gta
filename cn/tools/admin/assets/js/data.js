@@ -67,7 +67,7 @@ const services = [
   // www.globaltalk.asia/cn/tools/
   // -------------------------------------------------------
   {
-    id: "globaltalkasia-service",
+    id: "globaltalkasia-tools",
     name: "GlobalTalkAsia (Online Tools)",
     category: "GlobalTalkAsia",
     links: {
